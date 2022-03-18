@@ -321,7 +321,7 @@ if __name__ == '__main__':
     def str2bool(s):
         return s.lower().startswith('t')
 
-    parser.add_argument('--batch_size', default=128, type=int, help='Batch size per GPU')
+    parser.add_argument('--batch_size', default=28, type=int, help='Batch size per GPU')
     parser.add_argument('--image_size', default=32, type=int, help='Image size')
     parser.add_argument('--lr_flow', default=1e-4, type=float, help='Peak learning rate')
     parser.add_argument('--lr_ebm', default=1e-4, type=float, help='Peak learning rate')
@@ -344,7 +344,7 @@ if __name__ == '__main__':
                         help='L2 regularization (only applied to the weight norm scale factors)')
     parser.add_argument('--num_steps_Langevin_coopNet', default=30, type=int,
                         help='number of Langevin steps in CoopNets')
-    parser.add_argument('--step_size', default=0.13, type=float, help='Langevin step size')
+    parser.add_argument('--step_size', default=0.1, type=float, help='Langevin step size')
     parser.add_argument('--load_pretrain_flow', default=False, type=bool, help='Using CoopFlow (set to false) or CoopFlow-pre settings (set to true)')
     parser.add_argument('--train', default=False, type=bool, help='whether to train the model or to generate image for computing fid')
 
