@@ -26,7 +26,7 @@ class block(nn.Layer):
         h1_res = F.swish(self.res(x))
         return self.pooling(h2 + h1_res)
 
-'''
+
 class EBM_res(nn.Layer):
     def __init__(self, n_c, n_f):
         super(EBM_res, self).__init__()
@@ -94,7 +94,7 @@ class EBM_res(nn.Layer):
         h4 = self.h4(h3)
 
         return h4.squeeze().sum(-1)
-
+'''
 
 
 class EBM(nn.Layer):
