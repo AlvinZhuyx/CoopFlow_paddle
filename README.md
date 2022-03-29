@@ -17,6 +17,9 @@ For the installation of paddle, please check "[this website](https://www.paddlep
 ```bash
 python main.py --train True --resume False
 ```
+### for debug use only
+Currently what I put here is the results of a small EBM model; to run the large EBM model (which is the one we used in pytorch), please comment line 16 in main.py and uncomment line 17 in main.py. (You can check the structure difference under models/ebm/ebm.py)
+
 2. To train the CoopFlow(pre) model on cifar10:
 ```bash
 python main.py --train True --resume False --load_pretrain_flow True
