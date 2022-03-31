@@ -13,6 +13,7 @@ matplotlib = 3.2.2
 For the installation of paddle, please check "[this website](https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/install/conda/windows-conda.html)".
 
 ## train to model
+We put our pretrained checkpoints "[here](https://drive.google.com/drive/folders/1sRat_DQr4uWVC2OkqudKo6z5BsOJf3hT?usp=sharing)".
 1. To train the CoopFlow model on cifar10:
 ```bash
 python main.py --train True --resume False
@@ -22,7 +23,7 @@ python main.py --train True --resume False
 ```bash
 python main.py --train True --resume False --load_pretrain_flow True
 ```
-Note that to train CoopFlow model, you should first have a pretrained flow model. We provide the pretrained checkpoint here (coming soon). Or you can train the checkpoint you self using the code main_flow.py. Simply run the following code. 
+Note that to train CoopFlow model, you should first have a pretrained flow model. We provide the pretrained checkpoint here  "[here](https://drive.google.com/drive/folders/1sRat_DQr4uWVC2OkqudKo6z5BsOJf3hT?usp=sharing)". Or you can train the checkpoint you self using the code main_flow.py. Simply run the following code. 
 ```bash
 python main_flow.py
 ```
